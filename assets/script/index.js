@@ -9,7 +9,7 @@ for (let city of cities) {
 };
 
 //Выводим инфу на экран:
-const tempList = document.querySelector('.temp-list');
+const tempList = document.querySelector('.container__temp-list');
 for (let i = 0; i < temperatures.length; i ++) {
   const tempItem = document.createElement('li');
   tempItem.textContent = `Температура в городе ${cities[i]}: ${temperatures[i]} °C`;
@@ -27,6 +27,6 @@ const descendingLine = ascendingLine.reverse();
 const highestTemp = descendingLine[0];
 
 //Выводим и эту инфу на экран:
-const minMax = document.querySelector('.min-max');
+const minMax = document.querySelector('.container__min-max');
 minMax.textContent = `Минимальная температура: ${lowestTemp} °C. Максимальная температура: ${highestTemp} °C.`;
 
